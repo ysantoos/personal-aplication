@@ -1,0 +1,47 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.sidenav-container{
+    flex: 1;
+}
+.sidenav{
+    &__item{
+        margin-bottom: 8px;
+
+        mat-icon{
+            vertical-align: middle;
+        }
+    }
+}
+
+.profile{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    img{
+        border-radius: 50%;
+        height: 200px;
+        margin: auto;
+        width: 200px;
+    }
+    &__description{
+        align-items: center;
+        display: flex;
+        flex-direction: column; 
+        margin: 16px 0px;
+
+        div{
+            line-height: 27px;
+        }
+    }
+}
+
+.content{
+    margin: 50px 100px;
+}
