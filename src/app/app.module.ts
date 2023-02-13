@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import {CommonModule} from '@angular/common' 
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -7,19 +8,25 @@ import { AboutComponent } from './components/about/about.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { GistsComponent } from './components/gists/gists.component';
 import { MaterialModule } from './material.module';
+import { HttpClientModule } from '@angular/common/http';
+import { ScoreComponent } from './components/score/score.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     ExperienceComponent,
-    GistsComponent
+    GistsComponent,
+    ScoreComponent
   ],
   imports: [
+    CommonModule,
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    
   ],
   exports:[
     AboutComponent

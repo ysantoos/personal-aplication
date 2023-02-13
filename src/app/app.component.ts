@@ -1,6 +1,5 @@
 import { MediaMatcher } from '@angular/cdk/layout';
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import { IconService } from './shared/services/icon.service';
 
 @Component({
@@ -13,12 +12,12 @@ export class AppComponent implements OnInit  {
   mobileQuery: MediaQueryList;
   nav = [{
     icon: 'add_reaction',
-    name: 'About me',
+    name: 'Sobre mi',
     path: 'about'
   },
   {
     icon: 'work',
-    name: 'Experience',
+    name: 'Experiencia',
     path: 'experience'
   },
   {
@@ -28,10 +27,13 @@ export class AppComponent implements OnInit  {
   }]
 
 
-  constructor(private media: MediaMatcher, private iconService : IconService) {}
+  constructor(private media: MediaMatcher, private iconService : IconService) {
+    
+  }
 
   ngOnInit(): void {
-    this.mobileQuery = this.media.matchMedia('(max-width: 600px)');
     this.iconService.registerIcons();
+    this.mobileQuery = this.media.matchMedia('(max-width: 600px)');
+    
   }
 }

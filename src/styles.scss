@@ -17,10 +17,17 @@ $body-Text: mat.define-typography-level(
   $font-size: 22px,
   $line-height: 1.5
 );
+$title: mat.define-typography-level(
+  $font-family: Roboto,
+  $font-weight: 700,
+  $font-size: 36px,
+  $line-height: 1.5
+);
 
 
 $my-typography: mat.define-typography-config(
-  $body-2: $body-Text
+  $body-2: $body-Text,
+  $headline-5: $title
 );
 
 @include mat.typography-hierarchy($my-typography);
@@ -56,5 +63,4 @@ $personal-aplication-theme: mat.define-light-theme((
 
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
 

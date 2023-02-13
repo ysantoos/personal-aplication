@@ -1,4 +1,4 @@
 export enum Icons {
-    github = 'github',
-    linkedin = 'linkedin'
+    github = 'icon-github',
+    linkedin = 'icon-linkedin'
 }

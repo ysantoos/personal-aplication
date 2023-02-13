@@ -1,0 +1,4 @@
+<div class="score">
+    <div *ngFor="let item of onCreateArray(); let i = index"  [attr.data-index]="i"
+          [ngStyle]="{'background-color':i+1 <= score ? '#1F395A':'#D4D4D4'}"></div>
+</div>

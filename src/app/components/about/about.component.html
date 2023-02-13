@@ -1,1 +1,30 @@
-<p>about works!</p>
+<h1>YEISON GARCIA SANTOS</h1>
+
+<div>
+    <p>
+        Soy un desarrollador de software apasionado, con 4 años de experiencia en el desarrollo de soluciones
+        innovadoras y
+        eficientes. Mi experiencia incluye proyectos integrando software ERP, Software para la gestión de comercio
+        internacional y plataforma para arquitectos y maestros de obra, donde he demostrado habilidades para la
+        resolución
+        de problemas, trabajo en equipo y comunicación asertiva.
+    </p>
+
+    <p>
+        Tengo una formación sólida en diferentes herramientas y tecnologías tales como. Net JavaScript, TypeScript, SQL
+        y
+        Angular. Me esfuerzo por mantenerme actualizado con las últimas tendencias y tecnologías en el desarrollo de
+        Software, y estoy siempre buscando nuevos desafíos para mejorar mis habilidades.
+    </p>
+    <p>
+        En mi carrera como desarrollador de software, he trabajado en equipo con otros profesionales para lograr
+        objetivos
+        comunes y he desempeñado un papel clave en la entrega de proyectos exitosos.
+    </p>
+</div>
+<h1>HABILIDADES</h1>
+<ul class="skills">
+    <li *ngFor="let item of skills">
+      <div style="display: flex; align-items: center;justify-content: space-between;"> {{item.name}}  <app-score [score]="item.score"></app-score> </div>
+    </li>
+</ul>

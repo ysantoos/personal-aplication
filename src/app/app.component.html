@@ -1,6 +1,6 @@
 <div class="menu">
     <mat-toolbar>
-        <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+        <button mat-icon-button (click)="snav.toggle()"><mat-icon>{{snav.opened? 'menu' : 'menu'}}</mat-icon></button>
     </mat-toolbar>
     <mat-sidenav-container class="sidenav-container"
     >
@@ -15,7 +15,10 @@
                         <div>{{'software developer' | uppercase}}</div>
                     </div>
                 </div>
-                <!-- <button mat-icon-button><mat-icon svgIcon="linkedin"></mat-icon></button> -->
+                <div class="profile__social">
+                    <a href="https://www.linkedin.com/in/yeison-garcia/" target="_blank"><mat-icon [svgIcon]="'linkedin'"></mat-icon></a>
+                    <a href="https://github.com/ysantoos" target="_blank"><mat-icon [svgIcon]="'github'"></mat-icon></a>
+                </div>
 
             </div>
             <mat-nav-list>
