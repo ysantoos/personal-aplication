@@ -10,6 +10,13 @@ import { GistsComponent } from './components/gists/gists.component';
 import { MaterialModule } from './material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ScoreComponent } from './components/score/score.component';
+import { NgxBootstrapIconsModule } from 'ngx-bootstrap-icons';
+import { linkedin, github } from 'ngx-bootstrap-icons';
+
+const icons = {
+  linkedin,
+  github
+};
 
 @NgModule({
   declarations: [
@@ -26,7 +33,7 @@ import { ScoreComponent } from './components/score/score.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    
+    NgxBootstrapIconsModule.pick(icons)
   ],
   exports:[
     AboutComponent

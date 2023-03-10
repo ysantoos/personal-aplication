@@ -1,6 +1,6 @@
 import { MediaMatcher } from '@angular/cdk/layout';
 import { Component, OnInit } from '@angular/core';
-import { IconService } from './shared/services/icon.service';
+
 
 @Component({
   selector: 'app-root',
@@ -27,12 +27,11 @@ export class AppComponent implements OnInit  {
   }]
 
 
-  constructor(private media: MediaMatcher, private iconService : IconService) {
+  constructor(private media: MediaMatcher) {
     
   }
 
   ngOnInit(): void {
-    this.iconService.registerIcons();
     this.mobileQuery = this.media.matchMedia('(max-width: 600px)');
     
   }

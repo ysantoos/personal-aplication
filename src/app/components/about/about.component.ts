@@ -31,10 +31,6 @@ export class AboutComponent {
   },{
     name: 'HTML',
     score: 5
-  },
-  {
-    name: 'Java',
-    score: 1
   },{
     name: 'Javascript',
     score: 5

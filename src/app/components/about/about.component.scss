@@ -1,7 +1,13 @@
 .skills{
     column-count: 2;
-
+    padding: 0px;
     li{
         list-style: none;
     }
-}  
+}
+
+@media (max-width: 599px){
+    .skills{
+        column-count: 1;
+    }   
+}
